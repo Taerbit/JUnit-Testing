@@ -3,22 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test;
+package dundee;
 
 /**
  *
  * @author finntorbet
  */
-public class Test {
+public class Node {
+    Object data;
+    Node next;
     
-    public Test() {
-  
+    public Node(Object x) {
+        data = x;
+        next = null;
     }
     
-    public void print() {
-        String s = "test";
-        for(int i = 0; i < 5; i++) {
-            System.out.print(s + " " + i + "\n");
-        }
+    public void setNext(Node n) {
+        next = n;
     }
 }
